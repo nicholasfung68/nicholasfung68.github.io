@@ -138,4 +138,43 @@ $(function () {
             $backTop.slideDown(300);
         }
     });
+
+    // // 首页轮播图
+    // let coverSlider = $('.carousel');
+    // coverSlider.carousel({
+    //     duration: Number('120'),
+    //     fullWidth: true,
+    //     indicators: 'true' === 'true'
+    // });
+
+    // let carouselIntervalId;
+    
+    // // Loop to call the next cover article picture.
+    // let autoCarousel = function() {
+    //     carouselIntervalId = setInterval(function () {
+    //         coverSlider.carousel('next');
+    //     }, 2000);
+    // };
+    // autoCarousel();
+    
+
+    // let restartPlay = function () {
+        
+    //     clearInterval(carouselIntervalId);
+    //     autoCarousel();
+        
+    // };
+
+    
+    // // prev and next cover post.
+    // $('#prev-cover').click(function () {
+    //     coverSlider.carousel('prev');
+    //     restartPlay();
+    // });
+    // $('#next-cover').click(function () {
+    //     coverSlider.carousel('next');
+    //     restartPlay();
+    // });
+    
+
 });
