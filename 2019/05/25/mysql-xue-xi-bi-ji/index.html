@@ -4,8 +4,9 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="值得纪录的一天, nicholas fung">
-    <meta name="description" content="前言自三月来，就开始网申，投简历，各大院校来回跑参加宣讲会、笔试，个中辛苦只有经历过才知道——不是身体上的劳累，一直碰壁会让你觉得自己不值一提，会对自己越来越没有信心，甚至完全丧失信心，淹没在失望和绝望中，那样子真的很可怕，毕竟人生还有很长">
+    <meta name="keywords" content="MySQL学习笔记, nicholas fung">
+    <meta name="description" content="数据库概述数据库（DataBase，DB）：是指长期保存在计算机的存储设备上，按照一定的规则组织起来，可以被各种用户或应用共享的数据集合（文件系统）。
+数据库管理系统（DataBase Management System，DBMS）：是指一">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +14,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>值得纪录的一天 | Kadima</title>
+    <title>MySQL学习笔记 | Kadima</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -257,13 +258,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        值得纪录的一天
+                        MySQL学习笔记
                     </div>
                 </div>
             </div>
@@ -374,8 +375,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/求职/" target="_blank">
-                                <span class="chip bg-color">求职</span>
+                            <a href="/tags/MySQL/" target="_blank">
+                                <span class="chip bg-color">MySQL</span>
                             </a>
                         
                     </div>
@@ -386,8 +387,8 @@
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/记录/" class="post-category" target="_blank">
-                                记录
+                            <a href="/categories/MySQL学习笔记/" class="post-category" target="_blank">
+                                MySQL学习笔记
                             </a>
                         
                     </div>
@@ -398,21 +399,21 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-05-18
+                    2019-05-25
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        249
+                        943
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        1 分
+                        3 分
                     </div>
                     
                 
@@ -428,9 +429,84 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>自三月来，就开始网申，投简历，各大院校来回跑参加宣讲会、笔试，个中辛苦只有经历过才知道——不是身体上的劳累，一直碰壁会让你觉得自己不值一提，会对自己越来越没有信心，甚至完全丧失信心，淹没在失望和绝望中，那样子真的很可怕，毕竟人生还有很长的道路要走。</p>
-<h3 id="你可以把我消灭，但你不能打败我"><a href="#你可以把我消灭，但你不能打败我" class="headerlink" title="你可以把我消灭，但你不能打败我"></a>你可以把我消灭，但你不能打败我</h3><p>我记得我面了<strong><em>广发证券</em></strong>（止于二面经理面）、<strong><em>步步高</em></strong>（止于二面主管面）、<strong><em>多益网络</em></strong>（就一技术面，最后说面试不通过…有待加强技术）…有些hr面莫名其妙就挂了，感觉有点难受啊。</p>
-<h3 id="不要轻易放弃，最好的快要发生"><a href="#不要轻易放弃，最好的快要发生" class="headerlink" title="不要轻易放弃，最好的快要发生"></a>不要轻易放弃，最好的快要发生</h3><p>今天，终于顺利通过两轮面试，拿到offer了，挺满意的，也感谢二面面试官给我的建议——扬长避短。为未来加油！</p>
+                <h2 id="数据库概述"><a href="#数据库概述" class="headerlink" title="数据库概述"></a>数据库概述</h2><p><strong>数据库（DataBase，DB）</strong>：是指长期保存在计算机的存储设备上，按照一定的规则组织起来，可以被各种用户或应用共享的数据集合（文件系统）。</p>
+<p><strong>数据库管理系统（DataBase Management System，DBMS）</strong>：是指一种操作和管理数据库的大型软件，用于建立、使用和维护数据库，对数据库进行统一管理和控制，以保证数据库的安全性和完整性。用户通过数据库管理系统访问数据库的数据。</p>
+<p>数据库软件应该为数据库管理系统，数据库是通过数据库管理系统创建和操作的。</p>
+<p>数据库：存储、维护和管理数据的集合。</p>
+<h2 id="SQL概述"><a href="#SQL概述" class="headerlink" title="SQL概述"></a>SQL概述</h2><p>SQL：Structure Query Language，结构化查询语言。</p>
+<p>SQL被美国国家标准局（ANSI）确定为关系型数据库语言的美国标准，后来被国际化标准组织（ISO）采纳为关系数据库语言的国际标准。</p>
+<h3 id="SQL的分类-PS-sql语句以-结尾"><a href="#SQL的分类-PS-sql语句以-结尾" class="headerlink" title="SQL的分类(PS: sql语句以 ; 结尾)"></a>SQL的分类(PS: <strong>sql语句以 ; 结尾</strong>)</h3><ol>
+<li>DDL（Data Definition Language，数据定义语言）：用来定义数据库对象——库、表、列等。  </li>
+</ol>
+<p>​           关键字：<strong>CREATE、ALTER、DROP</strong></p>
+<ol start="2">
+<li>DML（Data Manipulation Language，数据操作语言）：用来定义数据库记录（数据）。</li>
+</ol>
+<p>​           关键字：<strong>INSERT、UPDATE、DELETE</strong></p>
+<ol start="3">
+<li>DCL(Data Control Language，数据查询语言）：用来查询记录（数据）。                              </li>
+</ol>
+<p>​           关键字：<strong>SELECT</strong></p>
+<p><strong>SQL语句执行顺序：</strong></p>
+<p><strong>FROM（确定数据源） —&gt;  WHERE（数据过滤）—&gt; GROUP BY（数据分组）—&gt; HAVING（分组后数据再次筛选）—&gt; SELECT（确定要显示的数据）—&gt;ORDER BY（排序）</strong></p>
+<h2 id="DDL：操作数据库、表、列等"><a href="#DDL：操作数据库、表、列等" class="headerlink" title="DDL：操作数据库、表、列等"></a>DDL：操作数据库、表、列等</h2><h3 id="操作数据库"><a href="#操作数据库" class="headerlink" title="操作数据库"></a><strong>操作数据库</strong></h3><p><strong>创建数据库： create database 数据库名字; 例如：create database mydb;</strong></p>
+<p> <strong>create database 数据库名字 character set utf8;</strong></p>
+<p><strong>查询：</strong></p>
+<p><strong>查看当前数据库服务器中的所有数据库:  show databases;</strong></p>
+<p><strong>查看前面创建mydb数据库的定义信息：show create database mydb；</strong></p>
+<p><strong>删除前面创建的mydb数据库： drop database mydb;</strong></p>
+<p><strong>修改：</strong></p>
+<p><strong>查看服务器中的数据库并把mydb的字符集修改为 utf8；</strong></p>
+<p><strong>alter database mydb character set utf8;</strong></p>
+<p><strong>其他：</strong></p>
+<p><strong>查看当前使用的数据库：  select database();</strong></p>
+<p><strong>切换数据库： use mydb2;</strong></p>
+<h3 id="操作数据表"><a href="#操作数据表" class="headerlink" title="操作数据表"></a><strong>操作数据表</strong></h3><p><strong>创建数据表：</strong></p>
+<p>​       <strong>create table 表名(</strong></p>
+<p>​               <strong>字段1 字段类型,</strong></p>
+<p> <strong>字段2 字段类型,</strong></p>
+<p><strong>…</strong></p>
+<p> <strong>字段n 字段类型</strong></p>
+<p><strong>);</strong></p>
+<h3 id="常用数据类型"><a href="#常用数据类型" class="headerlink" title="常用数据类型"></a>常用数据类型</h3><ol>
+<li>int：整型</li>
+<li>double：浮点型，例如double（5.2）表示最多5位，其中必须有两位小数，即最大值为999.99</li>
+<li>char：固定长度字符串类型，char(10) ‘abc       ‘</li>
+<li>varchar：可变长度字符串类型；varchar(10) ‘abc’</li>
+<li>text:字符串类型</li>
+<li>blob：字节类型</li>
+<li>date：日期类型，格式为：yyyy-mm-dd</li>
+<li>time：时间类型，格式为：hh:mm:ss  会自动赋值</li>
+<li>timestamp：时间戳类型，格式为：yyyy-mm-dd hh:mm:ss 会自动赋值</li>
+<li>datetime：日期时间类型，格式为：yyyy-mm-dd hh:mm:ss</li>
+</ol>
+<ul>
+<li><p>查看当前数据库中的所有表：show tables;</p>
+</li>
+<li><p>查看表的字段信息： desc 表名;</p>
+</li>
+<li><p>在创建的表添加一列：alter table 表名 add 新增列的列名 列的数据类型; </p>
+<p>例如：alter table employee add image blob;</p>
+</li>
+<li><p>修改某一列，例如修改emp表的job列，使其长度为60：</p>
+<p>  alter table emp modify job varchar(60);</p>
+</li>
+<li><p>删除某一列，一次只能删除一列，例如删除emp表的image列：</p>
+<p>alter table emp drop image;</p>
+</li>
+<li><p>修改表名：  rename table 原来的表名 to 新表名;  例如：rename table employee to emp;</p>
+</li>
+<li><p>查看表格的创建细节：show create table 表格名;</p>
+</li>
+<li><p>修改表的字符集为 gbk：alter table 表格名 character set gbk;</p>
+</li>
+<li><p>修改列名： alter table 表格名 change 原来的列名 新的列名 数据属性;</p>
+<p>例如：alter table emp change name  username varchar(60);</p>
+</li>
+<li><p>删除表： drop table 要删除表格的表格名;   例如删除test：drop table test;</p>
+</li>
+</ul>
+<p>未完待续……</p>
 
             </div>
             <hr>
@@ -470,7 +546,8 @@
         
         <div class="article col s12 m6 overflow-policy" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2019/05/25/mysql-xue-xi-bi-ji/">
                     <div class="card-image">
@@ -489,9 +566,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-05-25
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-05-25
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -504,6 +581,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -522,33 +600,31 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/05/14/lue-guo-qing-chun-xian-zhen-chong-feng/">
+                <a href="/2019/05/18/zhi-de-ji-lu-de-yi-tian/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="略过青春，陷阵冲锋">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="值得纪录的一天">
                         
-                        <span class="card-title">略过青春，陷阵冲锋</span>
+                        <span class="card-title">值得纪录的一天</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            我们匆匆略过青春，陷阵冲锋时间过得好快，转眼间大学四年即将过去，有些话，写一下吧，算是对过去四年的一个总结。
-总结四年的大学生活，简单来说就是大一迷茫，大二觉醒，大三奋起直追，大四的坚持不懈。以下就是我的几点体会，和大家分享。
-1.认识自己
+                            前言自三月来，就开始网申，投简历，各大院校来回跑参加宣讲会、笔试，个中辛苦只有经历过才知道——不是身体上的劳累，一直碰壁会让你觉得自己不值一提，会对自己越来越没有信心，甚至完全丧失信心，淹没在失望和绝望中，那样子真的很可怕，毕竟人生还有很长
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-05-14
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-05-18
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/随感/" class="post-category" target="_blank">
-                                    随感
+                            <a href="/categories/记录/" class="post-category" target="_blank">
+                                    记录
                                 </a>
                             
                             
@@ -558,8 +634,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/生活随感/" target="_blank">
-                        <span class="chip bg-color">生活随感</span>
+                    <a href="/tags/求职/" target="_blank">
+                        <span class="chip bg-color">求职</span>
                     </a>
                     
                 </div>
