@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Vue学习笔记</title>
+      <link href="/2019/05/25/vue-xue-xi-bi-ji/"/>
+      <url>/2019/05/25/vue-xue-xi-bi-ji/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Vue学习笔记"><a href="#Vue学习笔记" class="headerlink" title="Vue学习笔记"></a>Vue学习笔记</h1><h2 id="什么是Vue-js"><a href="#什么是Vue-js" class="headerlink" title="什么是Vue.js?"></a>什么是Vue.js?</h2><p>Vue.js是渐进式JavaScript框架，其特点是：易用、灵活、高效。</p><h2 id="MVC和MVVM的关系"><a href="#MVC和MVVM的关系" class="headerlink" title="MVC和MVVM的关系"></a>MVC和MVVM的关系</h2><p><img src="/2019/05/25/vue-xue-xi-bi-ji/Vue学习笔记/01.MVC和MVVM的关系图解.png" alt="01.MVC和MVVM的关系图解"></p><p>test for importing local images</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Vue学习笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Vue </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>MySQL学习笔记</title>
       <link href="/2019/05/25/mysql-xue-xi-bi-ji/"/>
       <url>/2019/05/25/mysql-xue-xi-bi-ji/</url>
